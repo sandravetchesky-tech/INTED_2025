@@ -1,0 +1,1131 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPwqdWt3Et8lTdPeWdiJ3+/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sandravetchesky-tech/INTED_2025/blob/main/Sandra\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2UN2a7IAHUOU",
+        "outputId": "d7bf9569-a178-4b61-f0df-73564b40ee91"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite sua idade: 14\n",
+            "Você ainda não pode votar.\n"
+          ]
+        }
+      ],
+      "source": [
+        "idade = int(input(\"Digite sua idade: \"))\n",
+        "\n",
+        "if idade >= 16:\n",
+        "    print(\"Você já pode votar.\")\n",
+        "else:\n",
+        "    print(\"Você ainda não pode votar.\")\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota1 = float(input(\"Digite a primeira nota: \"))\n",
+        "nota2 = float(input(\"Digite a segunda nota: \"))\n",
+        "\n",
+        "media = (nota1 + nota2) / 2\n",
+        "\n",
+        "if media >= 7:\n",
+        "    print(f\"Média: {media:.2f} — Aluno APROVADO.\")\n",
+        "else:\n",
+        "    print(f\"Média: {media:.2f} — Aluno REPROVADO.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0z7vB12HHikM",
+        "outputId": "07d1d6dc-e93b-4ffc-b9bc-b4cf794e8785"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a primeira nota: 10\n",
+            "Digite a segunda nota: 3\n",
+            "Média: 6.50 — Aluno REPROVADO.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "temperatura = float(input(\"Informe a temperatura do dia (°C): \"))\n",
+        "\n",
+        "if temperatura < 15:\n",
+        "    print(\"Sensação térmica: Fria\")\n",
+        "elif temperatura < 25:\n",
+        "    print(\"Sensação térmica: Agradável\")\n",
+        "elif temperatura < 35:\n",
+        "    print(\"Sensação térmica: Quente\")\n",
+        "else:\n",
+        "    print(\"Sensação térmica: Muito quente\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "w_FjzH2EHsCa",
+        "outputId": "22070425-4fb2-4fa3-e12a-37d92020e1b0"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Informe a temperatura do dia (°C): 17\n",
+            "Sensação térmica: Agradável\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = int(input(\"Digite um número inteiro: \"))\n",
+        "\n",
+        "if numero % 2 == 0:\n",
+        "    print(\"O número é PAR.\")\n",
+        "else:\n",
+        "    print(\"O número é ÍMPAR.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5BtRUuT4HzQj",
+        "outputId": "25f0ebe6-d0c6-4201-820d-32c4738218f0"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número inteiro: 5\n",
+            "O número é ÍMPAR.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "salario = float(input(\"Digite o salário atual: R$ \"))\n",
+        "\n",
+        "if salario <= 1500:\n",
+        "    aumento = 0.10      # 10%\n",
+        "elif salario <= 3000:\n",
+        "    aumento = 0.07      # 7%\n",
+        "else:\n",
+        "    aumento = 0.05      # 5%\n",
+        "\n",
+        "novo_salario = salario + (salario * aumento)\n",
+        "\n",
+        "print(f\"Novo salário: R$ {novo_salario:.2f}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Pj1ouKeDH4I8",
+        "outputId": "f6724c43-e120-4014-df91-4aa8305c489b"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o salário atual: R$ 1532\n",
+            "Novo salário: R$ 1639.24\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1 = float(input(\"Digite o primeiro número: \"))\n",
+        "n2 = float(input(\"Digite o segundo número: \"))\n",
+        "n3 = float(input(\"Digite o terceiro número: \"))\n",
+        "\n",
+        "# Verificando qual é o maior\n",
+        "if n1 >= n2 and n1 >= n3:\n",
+        "    maior = n1\n",
+        "elif n2 >= n1 and n2 >= n3:\n",
+        "    maior = n2\n",
+        "else:\n",
+        "    maior = n3\n",
+        "\n",
+        "print(f\"O maior valor é: {maior}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KMHfci0yIMw2",
+        "outputId": "f673c9aa-4f04-4942-e3ca-168b508c4972"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o primeiro número: 6\n",
+            "Digite o segundo número: 7\n",
+            "Digite o terceiro número: 9\n",
+            "O maior valor é: 9.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ano = int(input(\"Digite um ano: \"))\n",
+        "\n",
+        "# Regras para ano bissexto:\n",
+        "# 1. É divisível por 4\n",
+        "# 2. Se for divisível por 100, só é bissexto se também for divisível por 400\n",
+        "\n",
+        "if (ano % 400 == 0) or (ano % 4 == 0 and ano % 100 != 0):\n",
+        "    print(f\"{ano} é um ano bissexto.\")\n",
+        "else:\n",
+        "    print(f\"{ano} NÃO é um ano bissexto.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WexUN1M-IYRP",
+        "outputId": "248613ef-6deb-48c4-e5bc-781238bfde0f"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um ano: 2009\n",
+            "2009 NÃO é um ano bissexto.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "idade = int(input(\"Digite a idade: \"))\n",
+        "\n",
+        "if idade < 12:\n",
+        "    print(\"Ingresso infantil\")\n",
+        "else:\n",
+        "    print(\"Ingresso adulto\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "I-X6Ap9bIhx-",
+        "outputId": "ac726c24-3b1e-4fd7-d3b4-498e360a449d"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a idade: 14\n",
+            "Ingresso adulto\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "codigo = int(input(\"Digite o código do produto (1, 2 ou 3): \"))\n",
+        "\n",
+        "if codigo == 1:\n",
+        "    print(\"Produto: Maçã\")\n",
+        "elif codigo == 2:\n",
+        "    print(\"Produto: Banana\")\n",
+        "elif codigo == 3:\n",
+        "    print(\"Produto: Laranja\")\n",
+        "else:\n",
+        "    print(\"Código inválido!\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dQvkeR4FIn6O",
+        "outputId": "22708d01-9546-4695-d494-6bdc69e6da37"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o código do produto (1, 2 ou 3): 1\n",
+            "Produto: Maçã\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hora = int(input(\"Digite a hora (0 a 23): \"))\n",
+        "\n",
+        "if hora < 0 or hora > 23:\n",
+        "    print(\"Horário inválido!\")\n",
+        "elif hora < 12:\n",
+        "    print(\"Bom dia!\")\n",
+        "elif hora < 18:\n",
+        "    print(\"Boa tarde!\")\n",
+        "else:\n",
+        "    print(\"Boa noite!\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "A1u4Pg_JIupA",
+        "outputId": "d3a5cbfc-b10d-475e-969c-3c730fe4ad77"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a hora (0 a 23): 23\n",
+            "Boa noite!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "soma = 0\n",
+        "\n",
+        "while True:\n",
+        "    numero = float(input(\"Digite um número (0 para parar): \"))\n",
+        "\n",
+        "    if numero == 0:\n",
+        "        break\n",
+        "\n",
+        "    soma += numero\n",
+        "\n",
+        "print(f\"A soma total é: {soma}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TyJ29iwSJBDo",
+        "outputId": "c1c05482-5bec-49bf-f342-9a2f4877276d"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número (0 para parar): 6\n",
+            "Digite um número (0 para parar): 8\n",
+            "Digite um número (0 para parar): 0\n",
+            "A soma total é: 14.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "senha = \"\"\n",
+        "\n",
+        "while senha != \"python123\":\n",
+        "    senha = input(\"Digite a senha: \")\n",
+        "\n",
+        "print(\"Acesso permitido! Bem-vindo(a)!\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EhIx6kojJ53a",
+        "outputId": "3c0450b0-df54-4594-afde-f16f26601c32"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a senha: ''\n",
+            "Digite a senha: python123\n",
+            "Acesso permitido! Bem-vindo(a)!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "soma = 0\n",
+        "quantidade = 0\n",
+        "\n",
+        "while True:\n",
+        "    idade = int(input(\"Digite uma idade (negativa para encerrar): \"))\n",
+        "\n",
+        "    if idade < 0:\n",
+        "        break\n",
+        "\n",
+        "    soma += idade\n",
+        "    quantidade += 1\n",
+        "\n",
+        "if quantidade > 0:\n",
+        "    media = soma / quantidade\n",
+        "    print(f\"A média das idades é: {media:.2f}\")\n",
+        "else:\n",
+        "    print(\"Nenhuma idade válida foi digitada.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jIcnCE43J9HK",
+        "outputId": "2b83ad93-87ab-4a1c-885d-70ee515b6c09"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite uma idade (negativa para encerrar): 40\n",
+            "Digite uma idade (negativa para encerrar): -6\n",
+            "A média das idades é: 40.00\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "inicio = int(input(\"Digite o número inicial da contagem: \"))\n",
+        "\n",
+        "while inicio >= 0:\n",
+        "    print(inicio)\n",
+        "    inicio -= 1\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VCzIKZLEKJbK",
+        "outputId": "d1c84851-ab72-4229-916d-99217d29ebd6"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o número inicial da contagem: 30\n",
+            "30\n",
+            "29\n",
+            "28\n",
+            "27\n",
+            "26\n",
+            "25\n",
+            "24\n",
+            "23\n",
+            "22\n",
+            "21\n",
+            "20\n",
+            "19\n",
+            "18\n",
+            "17\n",
+            "16\n",
+            "15\n",
+            "14\n",
+            "13\n",
+            "12\n",
+            "11\n",
+            "10\n",
+            "9\n",
+            "8\n",
+            "7\n",
+            "6\n",
+            "5\n",
+            "4\n",
+            "3\n",
+            "2\n",
+            "1\n",
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for n in range(1, 51):\n",
+        "    print(n)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AmrRSKsWKRf7",
+        "outputId": "81aa009c-1de4-4b09-f8ca-710e39ac5ebe"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n",
+            "10\n",
+            "11\n",
+            "12\n",
+            "13\n",
+            "14\n",
+            "15\n",
+            "16\n",
+            "17\n",
+            "18\n",
+            "19\n",
+            "20\n",
+            "21\n",
+            "22\n",
+            "23\n",
+            "24\n",
+            "25\n",
+            "26\n",
+            "27\n",
+            "28\n",
+            "29\n",
+            "30\n",
+            "31\n",
+            "32\n",
+            "33\n",
+            "34\n",
+            "35\n",
+            "36\n",
+            "37\n",
+            "38\n",
+            "39\n",
+            "40\n",
+            "41\n",
+            "42\n",
+            "43\n",
+            "44\n",
+            "45\n",
+            "46\n",
+            "47\n",
+            "48\n",
+            "49\n",
+            "50\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = int(input(\"Digite um número para ver a tabuada: \"))\n",
+        "\n",
+        "for i in range(1, 11):\n",
+        "    resultado = numero * i\n",
+        "    print(f\"{numero} x {i} = {resultado}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ss8aNoFCKY2a",
+        "outputId": "b54a8bdc-4d08-40d4-e832-068495645b03"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número para ver a tabuada: 8\n",
+            "8 x 1 = 8\n",
+            "8 x 2 = 16\n",
+            "8 x 3 = 24\n",
+            "8 x 4 = 32\n",
+            "8 x 5 = 40\n",
+            "8 x 6 = 48\n",
+            "8 x 7 = 56\n",
+            "8 x 8 = 64\n",
+            "8 x 9 = 72\n",
+            "8 x 10 = 80\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "palavra = input(\"Digite uma palavra: \")\n",
+        "\n",
+        "for letra in palavra:\n",
+        "    print(letra)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z--ntopsKdJy",
+        "outputId": "d8d36363-2796-4193-e794-8063695b68d5"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite uma palavra: Vetchesky\n",
+            "V\n",
+            "e\n",
+            "t\n",
+            "c\n",
+            "h\n",
+            "e\n",
+            "s\n",
+            "k\n",
+            "y\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "maiores = 0\n",
+        "\n",
+        "for i in range(5):\n",
+        "    idade = int(input(f\"Digite a idade {i+1}: \"))\n",
+        "\n",
+        "    if idade > 18:\n",
+        "        maiores += 1\n",
+        "\n",
+        "print(f\"Quantidade de idades maiores que 18: {maiores}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fNGrGiCUKinK",
+        "outputId": "2cf79b91-0b17-4239-9a65-017516d36b40"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a idade 1: 18\n",
+            "Digite a idade 2: 14\n",
+            "Digite a idade 3: 17\n",
+            "Digite a idade 4: 58\n",
+            "Digite a idade 5: 99\n",
+            "Quantidade de idades maiores que 18: 2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "maior = None\n",
+        "\n",
+        "for i in range(7):\n",
+        "    num = float(input(f\"Digite o {i+1}º número: \"))\n",
+        "\n",
+        "    if maior is None or num > maior:\n",
+        "        maior = num\n",
+        "\n",
+        "print(f\"O maior número digitado foi: {maior}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4A0O2MWnKtrz",
+        "outputId": "e55bfa7c-e80a-4a97-ce9a-41f438d22772"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o 1º número: 16\n",
+            "Digite o 2º número: 17\n",
+            "Digite o 3º número: 9\n",
+            "Digite o 4º número: 66\n",
+            "Digite o 5º número: 24\n",
+            "Digite o 6º número: 66\n",
+            "Digite o 7º número: 77\n",
+            "O maior número digitado foi: 77.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mais_longa = \"\"\n",
+        "\n",
+        "for i in range(4):\n",
+        "    tarefa = input(f\"Digite o nome da {i+1}ª tarefa: \")\n",
+        "\n",
+        "    if len(tarefa) > len(mais_longa):\n",
+        "        mais_longa = tarefa\n",
+        "\n",
+        "print(f\"A tarefa com o nome mais longo é: {mais_longa}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "luB5qQ34K4_C",
+        "outputId": "1f041ea6-27ef-4dab-d930-5ff8036cd5e5"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o nome da 1ª tarefa: 1+1\n",
+            "Digite o nome da 2ª tarefa: mais longa\n",
+            "Digite o nome da 3ª tarefa: matematica\n",
+            "Digite o nome da 4ª tarefa: portugues\n",
+            "A tarefa com o nome mais longo é: mais longa\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "soma = 0\n",
+        "\n",
+        "for n in range(2, 101, 2):\n",
+        "    soma += n\n",
+        "\n",
+        "print(f\"A soma dos números pares de 2 a 100 é: {soma}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "b4ybHwRFLD9k",
+        "outputId": "87381eee-29d5-462a-c8ab-b78634e6f5e5"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A soma dos números pares de 2 a 100 é: 2550\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "positivos = 0\n",
+        "negativos = 0\n",
+        "zeros = 0\n",
+        "\n",
+        "for i in range(10):\n",
+        "    num = float(input(f\"Digite o {i+1}º número: \"))\n",
+        "\n",
+        "    if num > 0:\n",
+        "        positivos += 1\n",
+        "    elif num < 0:\n",
+        "        negativos += 1\n",
+        "    else:\n",
+        "        zeros += 1\n",
+        "\n",
+        "print(f\"Positivos: {positivos}\")\n",
+        "print(f\"Negativos: {negativos}\")\n",
+        "print(f\"Zeros: {zeros}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZkVZfXfoLY01",
+        "outputId": "00689efc-9b81-46f0-c1a3-f1e5d99dcd85"
+      },
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o 1º número: 5\n",
+            "Digite o 2º número: 6\n",
+            "Digite o 3º número: 9\n",
+            "Digite o 4º número: 2\n",
+            "Digite o 5º número: 3\n",
+            "Digite o 6º número: 1\n",
+            "Digite o 7º número: 77\n",
+            "Digite o 8º número: 99\n",
+            "Digite o 9º número: 88\n",
+            "Digite o 10º número: 44\n",
+            "Positivos: 10\n",
+            "Negativos: 0\n",
+            "Zeros: 0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(6):\n",
+        "    nome = input(f\"Digite o {i+1}º nome: \")\n",
+        "\n",
+        "    if nome.startswith(\"A\") or nome.startswith(\"a\") \\\n",
+        "       or nome.startswith(\"C\") or nome.startswith(\"c\"):\n",
+        "        print(nome)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4t1ckTQcL8ZL",
+        "outputId": "921037ea-c7fb-4233-de82-1d1159ec1cd6"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite o 1º nome: Sandra\n",
+            "Digite o 2º nome: Coringa\n",
+            "Coringa\n",
+            "Digite o 3º nome: Mara\n",
+            "Digite o 4º nome: LARISSA\n",
+            "Digite o 5º nome: EDINA\n",
+            "Digite o 6º nome: ROSANA\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:\n",
+        "    valor = float(input(\"Digite um valor (999 para encerrar): \"))\n",
+        "\n",
+        "    if valor == 999:\n",
+        "        break\n",
+        "\n",
+        "    print(f\"Valor registrado: {valor}\")\n",
+        "\n",
+        "print(\"Encerrando a caixa registradora...\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KW8Ll6RdMJfZ",
+        "outputId": "21e7a268-0c15-45c5-f8b8-d303fac1d01c"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um valor (999 para encerrar): 55\n",
+            "Valor registrado: 55.0\n",
+            "Digite um valor (999 para encerrar): 60\n",
+            "Valor registrado: 60.0\n",
+            "Digite um valor (999 para encerrar): 99\n",
+            "Valor registrado: 99.0\n",
+            "Digite um valor (999 para encerrar): 999\n",
+            "Encerrando a caixa registradora...\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for n in range(1, 21):\n",
+        "    if n % 4 == 0:\n",
+        "        continue\n",
+        "    print(n)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Vip-rKuUMhnq",
+        "outputId": "4a746b6a-6c6f-4858-d54d-1ed8ef457942"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "9\n",
+            "10\n",
+            "11\n",
+            "13\n",
+            "14\n",
+            "15\n",
+            "17\n",
+            "18\n",
+            "19\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "senha_correta = \"python123\"\n",
+        "\n",
+        "for tentativa in range(3):\n",
+        "    senha = input(\"Digite a senha: \")\n",
+        "\n",
+        "    if senha == senha_correta:\n",
+        "        print(\"Acesso permitido! Bem-vindo(a)!\")\n",
+        "        break\n",
+        "    else:\n",
+        "        print(\"Senha incorreta!\")\n",
+        "\n",
+        "if senha != senha_correta:\n",
+        "    print(\"Número máximo de tentativas atingido. Acesso bloqueado.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GyQfUHqhMqDy",
+        "outputId": "5134f56b-b5af-4cd1-f0fa-6434b84298cb"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite a senha: PYTHON123\n",
+            "Senha incorreta!\n",
+            "Digite a senha: python123\n",
+            "Acesso permitido! Bem-vindo(a)!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "soma = 0\n",
+        "\n",
+        "for i in range(10):\n",
+        "    num = float(input(f\"Digite o {i+1}º número: \"))\n",
+        "\n",
+        "    if num < 0:\n",
+        "        continue  # ignora números negativos\n",
+        "\n",
+        "    soma += num\n",
+        "\n",
+        "print(f\"A soma dos números positivos é: {soma}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3fpS1U5YMvGq",
+        "outputId": "550b0e74-0e0c-450d-c9b8-3d798f8a97f1"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite o 1º número: 16\n",
+            "Digite o 2º número: 20\n",
+            "Digite o 3º número: 42\n",
+            "Digite o 4º número: 50\n",
+            "Digite o 5º número: 48\n",
+            "Digite o 6º número: 60\n",
+            "Digite o 7º número: 30\n",
+            "Digite o 8º número: 10\n",
+            "Digite o 9º número: 999\n",
+            "Digite o 10º número: 0\n",
+            "A soma dos números positivos é: 1275.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "soma = 0\n",
+        "\n",
+        "while True:\n",
+        "    numero = float(input(\"Digite um número: \"))\n",
+        "    soma += numero\n",
+        "\n",
+        "    if soma > 200:\n",
+        "        break\n",
+        "\n",
+        "print(f\"A soma final foi {soma}, e o processo foi encerrado.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VB0kcGJqM7qD",
+        "outputId": "0b3592a9-0a80-4b41-ebe9-3a074952d11d"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite um número: 22\n",
+            "Digite um número: 33\n",
+            "Digite um número: 11\n",
+            "Digite um número: 44\n",
+            "Digite um número: 55\n",
+            "Digite um número: 66\n",
+            "A soma final foi 231.0, e o processo foi encerrado.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "contador = 0\n",
+        "\n",
+        "while True:\n",
+        "    palavra = input(\"Digite uma palavra (ou 'fim' para encerrar): \")\n",
+        "\n",
+        "    if palavra == \"fim\":\n",
+        "        break\n",
+        "\n",
+        "    contador += 1\n",
+        "\n",
+        "print(f\"Você digitou {contador} palavra(s) válida(s).\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ckTaSHDqNM_b",
+        "outputId": "c6020a60-2f60-4801-9047-c9c3bf940a8a"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Digite uma palavra (ou 'fim' para encerrar): Vetchesky\n",
+            "Digite uma palavra (ou 'fim' para encerrar): Sandra\n",
+            "Digite uma palavra (ou 'fim' para encerrar): fim\n",
+            "Você digitou 2 palavra(s) válida(s).\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "sbGNnmgENY0L"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
